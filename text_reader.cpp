@@ -6,15 +6,15 @@ using namespace std;
 int main() 
 {
 
-    //Ô­Ê¼µÄUTF-8ÎÄ±¾´æ·ÅÔÚin.txtÖĞ
+    //åŸå§‹çš„UTF-8æ–‡æœ¬å­˜æ”¾åœ¨in.txtä¸­
     ifstream infile("in.txt");
 
-    //½«¹ıÂËµô±êµã·ûºÅµÄÎÄ±¾ÖØĞÂ´æÈëµ½out.txtÖĞ
+    //å°†è¿‡æ»¤æ‰æ ‡ç‚¹ç¬¦å·çš„æ–‡æœ¬é‡æ–°å­˜å…¥åˆ°out.txtä¸­
     ofstream outfile("out.txt");
 
     int count = 0;
 
-    //¼ì²éÎÄ¼şÊÇ·ñ´ò¿ª
+    //æ£€æŸ¥æ–‡ä»¶æ˜¯å¦æ‰“å¼€
     if (!infile) {
         cout << "Can not open file in.txt" << endl;
         return -1;
@@ -24,29 +24,30 @@ int main()
         return -1;
     }
 
-    //¶¨Òå×ª»»¶ÔÏó
+    //å®šä¹‰è½¬æ¢å¯¹è±¡
     wstring_convert<codecvt_utf8<wchar_t>> conv;
 
-    //°´ĞĞ¶ÁÈ¡ÎÄ¼ş
+    //æŒ‰è¡Œè¯»å–æ–‡ä»¶
     while (!infile.eof()) 
     {
         string s;
         getline(infile, s);
 
-        //×ª»»³É¿í×Ö½ÚÀàĞÍ
+        //è½¬æ¢æˆå®½å­—èŠ‚ç±»å‹
         wstring ws = conv.from_bytes(s);
         wstring nws;
-        //¹ıÂËÃ¿Ò»ĞĞÖĞµÄ±êµãºÍ¿Õ¸ñ
+        //è¿‡æ»¤æ¯ä¸€è¡Œä¸­çš„æ ‡ç‚¹å’Œç©ºæ ¼
 
         for (wchar_t ch : ws) 
         {
-            //¼ì²éÊÇ·ñÊÇ±êµãºÍ¿Õ¸ñ
+            //æ£€æŸ¥æ˜¯å¦æ˜¯æ ‡ç‚¹å’Œç©ºæ ¼
             if (!iswpunct(ch) && !iswspace(ch)) 
             {
                 count++;
                 if (count == 20)
                 {
                     outfile << std::endl;
+                    count = 1;
                 }
                 string ns = conv.to_bytes(ch);
                 outfile << ns;
@@ -55,7 +56,7 @@ int main()
         }
    
     }
-    //¹Ø±ÕÎÄ¼ş
+    //å…³é—­æ–‡ä»¶
     infile.close();
     outfile.close();
     return 0;
