@@ -1,0 +1,5 @@
+/home/lingwei/Desktop/Linkage_Mechanism/build/CMakeFiles/rebuild_cache.dir
+/home/lingwei/Desktop/Linkage_Mechanism/build/CMakeFiles/edit_cache.dir
+/home/lingwei/Desktop/Linkage_Mechanism/build/CMakeFiles/linkage.dir
+/home/lingwei/Desktop/Linkage_Mechanism/build/CMakeFiles/linkageIF.dir
+/home/lingwei/Desktop/Linkage_Mechanism/build/CMakeFiles/linkage_shared.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,liblinkage_shared.so -o liblinkage_shared.so CMakeFiles/linkage_shared.dir/Kinetics.cpp.o 

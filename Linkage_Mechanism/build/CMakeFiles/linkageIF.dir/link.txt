@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblinkageIF.a  CMakeFiles/linkageIF.dir/Kinetics.cpp.o
+/usr/bin/ranlib liblinkageIF.a

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lingwei/Desktop/Linkage_Mechanism/Kinetics.cpp
+Kinetics.h
+/home/lingwei/Desktop/Linkage_Mechanism/Kinetics.h
+
+/home/lingwei/Desktop/Linkage_Mechanism/Kinetics.h
+iostream
+-
+cmath
+-
+

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/lingwei/Desktop/Linkage_Mechanism/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/linkage.dir/main.cpp.o -c /home/lingwei/Desktop/Linkage_Mechanism/main.cpp",
+  "file": "/home/lingwei/Desktop/Linkage_Mechanism/main.cpp"
+},
+{
+  "directory": "/home/lingwei/Desktop/Linkage_Mechanism/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/linkageIF.dir/Kinetics.cpp.o -c /home/lingwei/Desktop/Linkage_Mechanism/Kinetics.cpp",
+  "file": "/home/lingwei/Desktop/Linkage_Mechanism/Kinetics.cpp"
+},
+{
+  "directory": "/home/lingwei/Desktop/Linkage_Mechanism/build",
+  "command": "/usr/bin/c++  -Dlinkage_shared_EXPORTS  -g -fPIC   -o CMakeFiles/linkage_shared.dir/Kinetics.cpp.o -c /home/lingwei/Desktop/Linkage_Mechanism/Kinetics.cpp",
+  "file": "/home/lingwei/Desktop/Linkage_Mechanism/Kinetics.cpp"
+}
+]

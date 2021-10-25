@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/linkage.dir/main.cpp.o  -o linkage -Wl,-rpath,/home/lingwei/Desktop/Linkage_Mechanism/build liblinkage_shared.so 
